@@ -22,7 +22,7 @@ function g()
   
   cd ./tmp
   
-  git clone https://github.com/lorenzosaintdubois/inductor.git
+  git clone git@github.com:lorenzosaintdubois/inductor.git
   
   cd ./inductor
   
