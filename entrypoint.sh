@@ -8,6 +8,8 @@ set -o pipefail
 eval "$(ssh-agent)"
 ssh-add /etc/gitshell/kp
 
+ssh-keyscan github.com >>/root/.known_hosts
+
 function g()
 (
   mkdir -p ./tmp
