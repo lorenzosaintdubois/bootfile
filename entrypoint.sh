@@ -38,7 +38,7 @@ function f()
        -H "Authorization: Bearer ""$(cat /etc/gitshell/token)" \
        -H "X-GitHub-Api-Version: 2022-11-28" \
        https://api.github.com/repos/lorenzosaintdubois/inductor/branches \
-       >./body
+       | tee ./body
   
   current_sha="$(cat ./body | jq ".[0].commit.sha")"
   
