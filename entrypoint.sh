@@ -58,5 +58,5 @@ function f()
 while [ 1 ]
 do
   f
-  sleep 90
+  sleep 30
 done
